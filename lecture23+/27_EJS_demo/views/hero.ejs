@@ -1,0 +1,10 @@
+<h1>Alphabet List</h1>
+
+<% hero.forEach(function(x){ %>
+  <li><%= x %></li>
+<% }) %>
+
+<form action="/addhero" method="post">
+  <input type="text" name="newHero" placeholder="enter ur alphabet">
+  <button>Add!</button>
+</form>

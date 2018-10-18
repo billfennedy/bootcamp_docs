@@ -1,0 +1,40 @@
+body{
+  background: lightblue;
+}
+
+li {
+  border: 2px solid red;
+}
+
+#special {
+  color: yellow;
+  background: #778899;
+}
+
+/* Star : applies style to every tags*/
+
+* {
+  border : 5px solid gray;
+}
+
+/* Descendants Selector */
+
+li a {
+  color: yellow;
+}
+
+/* Adjacent Selector */
+
+h4 + ul {
+  color: yellow
+}
+
+/* Attribute selector */
+
+a[href="http://www.google.com"] {
+  color: pink;
+}
+
+h4:nth-of-type(2) {
+  background: pink;
+}

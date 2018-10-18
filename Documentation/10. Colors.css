@@ -1,0 +1,19 @@
+/* hexadecimal standard: #rrggbb r/g/b indicates value from 0 to 9 or A to F */
+h1 {
+  color: #278819;
+}
+
+/* in this standard, you can insert the precise color naming to the blank */
+h2 {
+  color: darkblue;
+}
+
+/* RGB standar: rgb(r,g,b) */
+h3 {
+  color: rgb(77,88,99);
+}
+
+/* RGBA standar: rgba(r,g,b,a) a states the power of transparency of the RGB result*/
+h3 {
+  color: rgba(77,88,99,0.2);
+}

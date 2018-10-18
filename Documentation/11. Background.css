@@ -1,0 +1,22 @@
+/* the 3 attribute should be present or borders will not work */
+h1 {
+  color: rgba(77,88,99,0.9);
+  border-color: navy;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* another format of borders */
+h2 {
+  color: rgba(ff,ff,99,0.9);
+  border : 3px solid #ff3922;
+}
+
+h5 {
+  color: #278819;
+}
+
+body {
+  background-image: url("fish1.jpg");
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<h1>Playgrounds Page</h1>
+
+Add new Heroes to Playground:<br>
+<a href="/playgrounds/new"> Here </a>
+
+<% heroes.forEach(function(hero){ %>
+  <div>
+    <h3><%=    hero.name %><br></h3>
+    <img src="<%= hero.image %>"</img>
+  </div>
+<% })%>
+
+<% include partials/footer %>
