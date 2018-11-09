@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+<div class="container">
+  <header class="jumbotron">
+    <div class="container">
+      <h1>Playgrounds!</h1>
+      <h3>To add new Heroes to Playground:</h3>
+      <p>
+      <a class="btn btn-primary btn-lg" href="/playgrounds/new"> Add new Hero </a>
+      </p>
+    </div>
+  </header>
+
+  <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+    <% playgrounds.forEach(function(hero){ %>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+                <img width=350 src="<%= hero.image %>"</img>
+                <div class="caption">
+                <h4><%= hero.name %><br></h4>
+                </div>
+                <p>
+                  <a href="/playgrounds/<%= hero._id %>" class="btn btn-primary"> more info</a>
+                </p>
+            </div>
+          </div>
+      <% })%>
+  </div>
+</div>
+
+<% include partials/footer %>
